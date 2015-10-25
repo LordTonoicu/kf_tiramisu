@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>kf-tiramisu</title>
+<!-- Bootstrap Inclusions -->
+<link rel="stylesheet" href="dependencies/css/bootstrap.min-3.3.5.css">
+<link rel="stylesheet" href="dependencies/css/font-awesome.min-4.4.0.css">
+<script type="text/javascript" src="dependencies/js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="dependencies/js/bootstrap.min-3.3.5.js"></script>
+
+<!-- Angular Inclusions -->
+<script type="text/javascript" src="dependencies/js/angular-1.4.2.js"></script>
+<script type="text/javascript" src="dependencies/js/angular-resource-1.4.2.js"></script>
+<script type="text/javascript" src="dependencies/js/angular-route-1.4.2.js"></script>
+<script type="text/javascript" src="dependencies/js/angular-cookies-1.4.2.js"></script>
+
+<!-- Aplication Custom Style -->
+<link rel="stylesheet" href="style/custom.css">
+</head>
+<body>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li role="presentation" class="active"><a href="#">Acasa</a></li>
+			<li role="presentation"><a href="#">Setari</a></li>
+			<li role="presentation"><a href="#">Autentificare</a></li>
+		</ul>
+		<!-- TODO: Move this in an angular view -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">Calculare Credit</div>
+			<div class="panel-body ">
+					<div class="dropdown" id="dropdownBank">
+						<button class="btn btn-default dropdown-toggle" type="button"
+							id="dropdownBankButton" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="true">
+							Alegeti Banca <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownBankButton">
+							<li class="container">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Banca Transilvania</label>
+								</div>
+							</li>
+							<li class="container">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">BCR</label>
+								</div>
+							<li class="container">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">BRD</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<br/>
+					<div class="dropdown" id="dropdownCredit">
+						<button class="btn btn-default dropdown-toggle" type="button"
+							id="dropdownCreditButton" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="true">
+							Alegeti Tipul Creditului <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownCreditButton">
+							<li class="container">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Credit Imobiliar</label>
+								</div>
+							</li>
+							<li class="container">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Credit Ipotecar</label>
+								</div>
+							<li class="container">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Prima Casa</label>
+								</div>
+							</li>
+						</ul>
+					</div>  		
+					<br/>
+  					<input type="text" class="form-control" placeholder="Valoare Credit">
+					<br/>
+					<input type="text" class="form-control" placeholder="Perioada in luni">
+					<br/>
+					<button class="btn btn-primary">Calculeaza</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
