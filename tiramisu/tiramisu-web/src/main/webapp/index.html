@@ -6,6 +6,8 @@
 <!-- Bootstrap Inclusions -->
 <link rel="stylesheet" href="dependencies/css/bootstrap.min-3.3.5.css">
 <link rel="stylesheet" href="dependencies/css/font-awesome.min-4.4.0.css">
+<link rel="stylesheet" href="dependencies/css/screenWeb.css">
+<link rel="stylesheet" href="dependencies/css/style.css">
 <script type="text/javascript" src="dependencies/js/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="dependencies/js/bootstrap.min-3.3.5.js"></script>
 
@@ -18,13 +20,19 @@
 <!-- Aplication Custom Style -->
 <link rel="stylesheet" href="style/custom.css">
 </head>
-<body>
-	<div class="container">
-		<ul class="nav nav-tabs">
-			<li role="presentation" class="active"><a href="#">Acasa</a></li>
-			<li role="presentation"><a href="#">Setari</a></li>
-			<li role="presentation"><a href="#">Autentificare</a></li>
-		</ul>
+<body style="background-color:gray;">
+	<div class="container" style="margin-top:20px;">
+		<div class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+            	<div class="navbar-header"> </div>
+            	<div class="navbar-collapse collapse" >
+					<ul class="nav navbar-nav dropdown">
+						<li><a href="#">Acasa</a></li>
+						<li><a href="#">Autentificare</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<!-- TODO: Move this in an angular view -->
 		<div class="panel panel-primary">
 			<div class="panel-heading">Calculare Credit</div>
@@ -81,7 +89,7 @@
 					<br/>
 					<input type="text" class="form-control" placeholder="Perioada in luni">
 					<br/>
-					<button class="btn btn-primary">Calculeaza</button>
+					<input type="submit" class="buttonaplica" value="Calculeaza">
 			</div>
 		</div>
 	</div>
